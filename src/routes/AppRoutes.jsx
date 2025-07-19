@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router'
-import Dashboard from '../features/Dashboard'
+import Dashboard from '@/features/Dashboard'
 
 const AppRoutes = () => {
     return (

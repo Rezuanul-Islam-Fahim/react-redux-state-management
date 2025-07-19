@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { BrowserRouter } from 'react-router'
-import AppRoutes from '../routes/AppRoutes'
+import AppRoutes from '@/routes/AppRoutes'
 
 const App = () => {
   useEffect(() => {

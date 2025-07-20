@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router'
 import AppRoutes from '@/routes/AppRoutes'
-import { store } from './store.js'
+import { store } from '.'
 
 const App = () => {
   useEffect(() => {

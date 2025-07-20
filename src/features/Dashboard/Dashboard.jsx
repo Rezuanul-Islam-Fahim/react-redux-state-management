@@ -4,7 +4,7 @@ const Dashboard = () => {
     return (
         <div className="min-h-screen flex items-center justify-center">
             <div className="flex flex-col">
-                <Link
+                <Link to='/counter-app'
                     className="btn btn-primary my-2">
                     Counter App
                 </Link>

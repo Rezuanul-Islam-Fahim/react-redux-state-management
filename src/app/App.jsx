@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
+import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router'
 import AppRoutes from '@/routes/AppRoutes'
+import { store } from './store.js'
 
 const App = () => {
   useEffect(() => {
@@ -9,7 +11,9 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <Provider store={store}>
+        <AppRoutes />
+      </Provider>
     </BrowserRouter>
   )
 }

@@ -1,13 +1,17 @@
 import { Link } from 'react-router'
+import { useSelector } from 'react-redux'
+import { selectCount } from '.'
 
 const Counter = () => {
+    const count = useSelector(selectCount)
+
     return (
         <div className="items-center justify-center py-12">
             <div className="flex flex-row items-center justify-center mb-10">
                 <button className="btn btn-accent btn-circle text-xl font-bold text-center">
                     -
                 </button>
-                <h1 className="text-6xl px-5">0</h1>
+                <h1 className="text-6xl px-5">{count}</h1>
                 <button className="btn btn-accent btn-circle text-xl font-bold text-center">
                     +
                 </button>

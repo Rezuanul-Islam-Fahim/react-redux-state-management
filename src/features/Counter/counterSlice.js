@@ -10,4 +10,6 @@ const counterSlice = createSlice({
     initialState: initialState
 })
 
-export default counterSlice.reducer
+export const counterReducer = counterSlice.reducer
+export const selectCount = state => state.counter.value
+export const selectStatus = state => state.counter.status

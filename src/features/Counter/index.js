@@ -1,2 +1,2 @@
 export { default as Counter } from './Counter'
-export { default as counterReducer } from './counterSlice'
+export { counterReducer, selectCount, selectStatus } from './counterSlice'

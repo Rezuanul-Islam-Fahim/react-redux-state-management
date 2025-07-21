@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectCount, increment, decrement, incrementByAmount } from '.';
+import {
+  selectCount,
+  increment,
+  decrement,
+  incrementByAmount,
+  increaseIfOdd,
+} from '.';
 
 const Counter = () => {
   const dispatch = useDispatch();
@@ -42,7 +48,12 @@ const Counter = () => {
       </div>
       <div className="flex flex-row items-center justify-center">
         <button className="btn btn-neutral w-60 mr-1">Add Async</button>
-        <button className="btn btn-neutral w-60 ml-1">Add If Odd</button>
+        <button
+          onClick={() => dispatch(increaseIfOdd(increaseAmountNum))}
+          className="btn btn-neutral w-60 ml-1"
+        >
+          Add If Odd
+        </button>
       </div>
       <div className="flex justify-center mt-40">
         <Link to="/" className="btn btn-outline">

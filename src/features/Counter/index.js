@@ -6,4 +6,5 @@ export {
   increment,
   decrement,
   incrementByAmount,
+  increaseIfOdd,
 } from './counterSlice';

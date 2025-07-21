@@ -61,11 +61,6 @@ const Counter = () => {
           Add If Odd
         </button>
       </div>
-      <div className="flex justify-center mt-40">
-        <Link to="/" className="btn btn-outline">
-          Back to Dashboard
-        </Link>
-      </div>
     </div>
   );
 };

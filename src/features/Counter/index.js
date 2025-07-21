@@ -7,4 +7,5 @@ export {
   decrement,
   incrementByAmount,
   increaseIfOdd,
+  incrementAsync,
 } from './counterSlice';

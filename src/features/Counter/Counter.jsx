@@ -7,6 +7,7 @@ import {
   decrement,
   incrementByAmount,
   increaseIfOdd,
+  incrementAsync,
 } from '.';
 
 const Counter = () => {
@@ -47,7 +48,12 @@ const Counter = () => {
         </button>
       </div>
       <div className="flex flex-row items-center justify-center">
-        <button className="btn btn-neutral w-60 mr-1">Add Async</button>
+        <button
+          onClick={() => dispatch(incrementAsync(increaseAmountNum))}
+          className="btn btn-neutral w-60 mr-1"
+        >
+          Add Async
+        </button>
         <button
           onClick={() => dispatch(increaseIfOdd(increaseAmountNum))}
           className="btn btn-neutral w-60 ml-1"
